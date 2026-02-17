@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/bhfdampoc" mode="merge"/>
+    <filter root="/content/bhfdampoc" mode="merge"/>
+    <filter root="/content/dam/bhfdampoc" mode="merge">
+        <exclude pattern="/content/dam/bhfdampoc(/.*)?"/>
+        <include pattern="/content/dam/bhfdampoc/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/bhfdampoc/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/bhfdampoc" mode="merge"/>
+</workspaceFilter>
