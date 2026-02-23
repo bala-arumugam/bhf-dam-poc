@@ -1,0 +1,6 @@
+{
+    "scripts": [
+        "create service user dam-service with path system/services",
+        "set principal ACL for dam-service\n allow jcr:read, jcr:addChildNodes, jcr:modifyProperties, jcr:removeNode on /content/dam\nend"
+    ]
+}
