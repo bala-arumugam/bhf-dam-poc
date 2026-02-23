@@ -193,7 +193,7 @@
                 listOrder="23"
                 metaType="listoptions"
                 name="jcr:content/metadata/dam:isDuplicate"
-                singleSelect="{Boolean}true"
+                singleSelect="{Boolean}false"
                 text="Duplicate Asset"
                 value="true">
                 <items jcr:primaryType="nt:unstructured">
@@ -201,10 +201,6 @@
                         jcr:primaryType="nt:unstructured"
                         text="True"
                         value="true"/>
-                    <_x0031_770909469915
-                        jcr:primaryType="nt:unstructured"
-                        text="False"
-                        value="false"/>
                 </items>
             </_x0031_770909428534>
             <typeor
