@@ -2383,7 +2383,7 @@
                                     fieldLabel="Primary Asset Path"
                                     name="./jcr:content/metadata/dam:primaryAssetPath"
                                     readOnly="{Boolean}true"
-                                    resourceType="granite/ui/components/coral/foundation/form/textfield">
+                                    resourceType="granite/ui/components/coral/foundation/form/textarea">
                                     <granite:data
                                         jcr:primaryType="nt:unstructured"
                                         cascadeVisibilityFrom="./jcr:content/metadata/dam:isDuplicate"

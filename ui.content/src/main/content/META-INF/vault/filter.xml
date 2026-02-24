@@ -9,5 +9,5 @@
     <filter root="/content/dam/bhfdampoc/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/bhfdampoc" mode="merge"/>
     <filter root="/conf/global/settings/dam" mode="merge"/>
-    <filter root="/conf/global/settings/dam/adminui-extension" mode="merge"/>
+    <filter root="/conf/global/settings/dam/adminui-extension" mode="merge_properties"/>
 </workspaceFilter>
