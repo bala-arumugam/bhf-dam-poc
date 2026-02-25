@@ -53,7 +53,7 @@
                     <group>com.bhf.dam.poc</group>
                     <name>bhfdampoc.ui.content</name>
                     <packageType>content</packageType>
-                    <accessControlHandling>ignore</accessControlHandling>
+                    <accessControlHandling>merge</accessControlHandling>
                     <validatorsSettings>
                         <jackrabbit-filter>
                             <options>
