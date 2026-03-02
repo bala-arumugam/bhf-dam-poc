@@ -11,5 +11,5 @@
 <filter root="/conf/global/settings/dam/search" mode="update"/>
 <filter root="/conf/global/settings/dam/adminui-extension" mode="merge"/>
 <filter root="/conf/global/settings/dam/adminui-extension/metadataschema" mode="merge"/>
-<filter root="/conf/global/settings/dam/adminui-extension/metadataschema/brighthouse" mode="merge"/>
+<filter root="/conf/global/settings/dam/adminui-extension/metadataschema/brighthouse"/>
 </workspaceFilter>
