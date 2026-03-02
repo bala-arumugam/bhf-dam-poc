@@ -974,6 +974,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     fieldLabel="State/Province"
+                                    multiple="true"
                                     name="./jcr:content/metadata/Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrRegion"
                                     resourceType="granite/ui/components/coral/foundation/form/textfield">
                                     <granite:data
