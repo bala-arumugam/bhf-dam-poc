@@ -793,11 +793,27 @@
                                         requiredCascading="default"
                                         visibilityCascading="default"/>
                                 </usageterms>
+                                <legalenumber
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/gui/components/admin/schemafield"
+                                    fieldLabel="Legal Number"
+                                    fieldDescription="Enter the Legel Number"
+                                    name="./jcr:content/metadata/legalNumber"
+                                    resourceType="granite/ui/components/coral/foundation/form/textfield">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="./metadata/legalNumber"
+                                        metaType="text"
+                                        requiredCascading="default"
+                                        visibilityCascading="default"/>
+                                </legalenumber>
+
                                 <expires
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     displayedFormat="YYYY-MM-DD HH:mm"
-                                    fieldLabel="Expires (MM-DD-YYYY HH:mm)"
+                                    fieldLabel="Legal Expiration Date"
+                                    fieldDescription="Select the date when the asset legally expires."
                                     minDate="today"
                                     name="./jcr:content/metadata/prism:expirationDate"
                                     resourceType="granite/ui/components/coral/foundation/form/datepicker"
@@ -1909,6 +1925,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Category"
+                                    fieldDescription="Enter Product Category"
                                     name="./jcr:content/metadata/productCategory"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -1940,11 +1957,12 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
                                 </_x0031_771431892027>
-                                <_x0031_771432077679
+                                <productName
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Name"
+                                    fieldDescription="Enter the Product Name"
                                     multiple="true"
                                     name="./jcr:content/metadata/productName"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -1953,7 +1971,6 @@
                                         choicesCascading="default"
                                         cq-msm-lockable="./metadata/productName"
                                         metaType="dropdown"
-                                        requiredCascading="always"
                                         visibilityCascading="default"/>
                                     <items jcr:primaryType="nt:unstructured">
                                         <_x0031_771432138344
@@ -2008,12 +2025,14 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771432077679>
-                                <_x0031_771432554751
+                                </productName>
+                                <productVariant
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Variant"
+                                    fieldDescription="Enter the Product Variant"
+                                    multiple="true"
                                     name="./jcr:content/metadata/productVariant"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2021,7 +2040,6 @@
                                         choicesCascading="default"
                                         cq-msm-lockable="./metadata/productVariant"
                                         metaType="dropdown"
-                                        requiredCascading="always"
                                         visibilityCascading="default"/>
                                     <items jcr:primaryType="nt:unstructured">
                                         <_x0031_771432581371
@@ -2048,11 +2066,12 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771432554751>
+                                </productVariant>
                                 <_x0031_771443270356
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     fieldLabel="RM Number"
+                                    fieldDescription="Enter RM Number"
                                     name="./jcr:content/metadata/rmNumber"
                                     resourceType="granite/ui/components/coral/foundation/form/textfield">
                                     <granite:data
@@ -2067,6 +2086,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Is Duplicate"
+                                    fieldDescription="Is Duplicate"
                                     name="./jcr:content/metadata/dam:isDuplicate"
                                     readOnly="{Boolean}true"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2096,6 +2116,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     fieldLabel="Primary Asset Path"
+                                    fieldDescription="if Duplcate this value exists"
                                     name="./jcr:content/metadata/dam:primaryAssetPath"
                                     readOnly="{Boolean}true"
                                     resourceType="granite/ui/components/coral/foundation/form/textarea">
@@ -2124,6 +2145,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     displayedFormat="YYYY-MM-DD HH:mm"
                                     fieldLabel="Effective Start Date"
+                                    fieldDescription="Enter the Effective Start Date"
                                     name="./jcr:content/metadata/EffectiveStartDate"
                                     resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                     type="datetime">
@@ -2134,12 +2156,13 @@
                                         requiredCascading="always"
                                         typeHint="Date"
                                         visibilityCascading="default"/>
-                                </EffectiveDate>
+                                </EffectiveStartDate>
                                 <EffectiveEndDate
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     displayedFormat="YYYY-MM-DD HH:mm"
                                     fieldLabel="Effective Start Date"
+                                    fieldDescription="Enter the Effective End Date"
                                     name="./jcr:content/metadata/EffectiveEndDate"
                                     resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                     type="datetime">
@@ -2151,24 +2174,13 @@
                                         typeHint="Date"
                                         visibilityCascading="default"/>
                                 </EffectiveEndDate>
-                                 <licensenumber
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="dam/gui/components/admin/schemafield"
-                                    fieldLabel="License Number"
-                                    name="./jcr:content/metadata/licensenumber"
-                                    resourceType="granite/ui/components/coral/foundation/form/textfield">
-                                    <granite:data
-                                        jcr:primaryType="nt:unstructured"
-                                        cq-msm-lockable="./metadata/licensenumber"
-                                        metaType="text"
-                                        requiredCascading="default"
-                                        visibilityCascading="default"/>
-                                </licensenumber>
+                                 
                                 <_x0031_771433013782
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Firm"
+                                    fieldDescription="Enter the Firm Name"
                                     multiple="true"
                                     name="./jcr:content/metadata/firm"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2242,6 +2254,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Content Type"
+                                    fieldDescription="Enter the Content Type"
                                     name="./jcr:content/metadata/contentType"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2390,6 +2403,8 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="State Availability"
+                                    fieldDescription="Enter the State Availability"
+                                    multiple="true"
                                     name="./jcr:content/metadata/stateAvailability"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2674,6 +2689,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Channel"
+                                    fieldDescription="Enter the Channel"
                                     multiple="true"
                                     name="./jcr:content/metadata/channel"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2739,6 +2755,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Approval Level"
+                                    fieldDescription="Enter the Approval Level"
                                     multiple="true"
                                     name="./jcr:content/metadata/approvalLevel"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2780,6 +2797,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Search Synonyms"
+                                    fieldDescription="Enter Search Synonyms"
                                     multiple="true"
                                     name="./jcr:content/metadata/searchSynonyms"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2823,10 +2841,10 @@
                                             jcr:primaryType="nt:unstructured"
                                             text="VA"
                                             value="VA"/>
-                                        <_x0031_771432901334
+                                        <fia
                                             jcr:primaryType="nt:unstructured"
-                                            text="SK"
-                                            value="SK"/>
+                                            text="FIA"
+                                            value="FIA"/>    
                                         <_x0031_771432914278
                                             jcr:primaryType="nt:unstructured"
                                             text="FRA"
@@ -2837,12 +2855,16 @@
                                             value="FRA MVA"/>
                                         <_x0031_771432945148
                                             jcr:primaryType="nt:unstructured"
-                                            text="IA"
-                                            value="IA"/>
+                                            text="SPIA"
+                                            value="SPIA"/>
                                         <_x0031_771432957944
                                             jcr:primaryType="nt:unstructured"
                                             text="GIB"
                                             value="GIB"/>
+                                        <oyt
+                                            jcr:primaryType="nt:unstructured"
+                                            text="OYT"
+                                            value="OYT"/>
                                     </items>
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
@@ -2853,6 +2875,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Asset Status"
+                                     fieldDescription="Enter the Asset Status"
                                     name="./jcr:content/metadata/assetStatus"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
