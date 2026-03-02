@@ -2134,7 +2134,7 @@
                                         requiredCascading="always"
                                         typeHint="Date"
                                         visibilityCascading="default"/>
-                                </EffectiveDate>
+                                </EffectiveStartDate>
                                 <EffectiveEndDate
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
