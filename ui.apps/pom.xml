@@ -177,5 +177,11 @@
             <version>1.2.4-1.4.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Lodash NPM Package via WebJars -->
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>lodash</artifactId>
+            <version>4.17.21</version>
+        </dependency>
     </dependencies>
 </project>
