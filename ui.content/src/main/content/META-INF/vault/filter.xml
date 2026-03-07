@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/bhfdampoc" mode="merge"/>
-    <filter root="/content/bhfdampoc" mode="merge"/>
-    <filter root="/content/dam/bhfdampoc" mode="merge">
-        <exclude pattern="/content/dam/bhfdampoc(/.*)?"/>
-        <include pattern="/content/dam/bhfdampoc/jcr:content(/.*)?"/>
-    </filter>
-    <filter root="/content/dam/bhfdampoc/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/bhfdampoc" mode="merge"/>
-    <filter root="/conf/global/settings/dam/search" mode="update"/>
-    <filter root="/conf/global/settings/dam/adminui-extension" mode="merge"/>
+<filter root="/conf/bhfdampoc" mode="merge"/>
+<filter root="/content/bhfdampoc" mode="merge"/>
+<filter root="/content/cq:tags/brighthouse"/>
+<filter root="/content/dam/bhfdampoc" mode="merge">
+    <exclude pattern="/content/dam/bhfdampoc(/.*)?"/>
+    <include pattern="/content/dam/bhfdampoc/jcr:content(/.*)?"/>
+</filter>
+<filter root="/content/dam/bhfdampoc/asset.jpg" mode="merge"/>
+<filter root="/content/experience-fragments/bhfdampoc" mode="merge"/>
+<filter root="/conf/global/settings/dam/search" mode="update"/>
+<filter root="/conf/global/settings/dam/adminui-extension" mode="merge"/>
+<filter root="/conf/global/settings/dam/adminui-extension/metadataschema" mode="merge"/>
+<filter root="/conf/global/settings/dam/adminui-extension/metadataschema/brighthouse"/>
+<!-- <filter root="/_cq_tags/brighthouse" mode="merge"/> -->
 </workspaceFilter>

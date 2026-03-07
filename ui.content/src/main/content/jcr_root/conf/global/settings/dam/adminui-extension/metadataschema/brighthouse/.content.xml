@@ -793,11 +793,27 @@
                                         requiredCascading="default"
                                         visibilityCascading="default"/>
                                 </usageterms>
-                                <expires
+                                <legalenumber
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/gui/components/admin/schemafield"
+                                    fieldLabel="Legal Number"
+                                    fieldDescription="Enter the Legel Number"
+                                    name="./jcr:content/metadata/legalNumber"
+                                    resourceType="granite/ui/components/coral/foundation/form/textfield">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="./metadata/legalNumber"
+                                        metaType="text"
+                                        requiredCascading="default"
+                                        visibilityCascading="default"/>
+                                </legalenumber>
+
+                                <legalExpirationDate
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     displayedFormat="YYYY-MM-DD HH:mm"
-                                    fieldLabel="Expires (MM-DD-YYYY HH:mm)"
+                                    fieldLabel="Legal Expiration Date"
+                                    fieldDescription="Select the legal or compliance expiration date for this asset. This date is used for reporting and monitoring upcoming expirations."
                                     minDate="today"
                                     name="./jcr:content/metadata/prism:expirationDate"
                                     resourceType="granite/ui/components/coral/foundation/form/datepicker"
@@ -809,7 +825,7 @@
                                         requiredCascading="default"
                                         typeHint="Date"
                                         visibilityCascading="default"/>
-                                </expires>
+                                </legalExpirationDate>
                                 <id
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
@@ -1909,6 +1925,7 @@
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Category"
+                                    fieldDescription="Select the top-level product classification"
                                     name="./jcr:content/metadata/productCategory"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -1940,11 +1957,12 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
                                 </_x0031_771431892027>
-                                <_x0031_771432077679
+                                <productName
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Name"
+                                    fieldDescription="Select the Product Identifier"
                                     multiple="true"
                                     name="./jcr:content/metadata/productName"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -1953,7 +1971,6 @@
                                         choicesCascading="default"
                                         cq-msm-lockable="./metadata/productName"
                                         metaType="dropdown"
-                                        requiredCascading="always"
                                         visibilityCascading="default"/>
                                     <items jcr:primaryType="nt:unstructured">
                                         <_x0031_771432138344
@@ -2008,12 +2025,14 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771432077679>
-                                <_x0031_771432554751
+                                </productName>
+                                <productVariant
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Product Variant"
+                                    fieldDescription="Select the specific product variant, such as term length or advisory version, if applicable"
+                                    multiple="true"
                                     name="./jcr:content/metadata/productVariant"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2021,7 +2040,6 @@
                                         choicesCascading="default"
                                         cq-msm-lockable="./metadata/productVariant"
                                         metaType="dropdown"
-                                        requiredCascading="always"
                                         visibilityCascading="default"/>
                                     <items jcr:primaryType="nt:unstructured">
                                         <_x0031_771432581371
@@ -2048,11 +2066,12 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771432554751>
+                                </productVariant>
                                 <_x0031_771443270356
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     fieldLabel="RM Number"
+                                    fieldDescription="Type in the RM Number associated with the asset"
                                     name="./jcr:content/metadata/rmNumber"
                                     resourceType="granite/ui/components/coral/foundation/form/textfield">
                                     <granite:data
@@ -2062,6 +2081,54 @@
                                         requiredCascading="default"
                                         visibilityCascading="default"/>
                                 </_x0031_771443270356>
+                                 <_x0031_771523334727
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/gui/components/admin/schemafield"
+                                    emptyText="Select Option"
+                                    fieldLabel="Is Duplicate"
+                                    fieldDescription="Is Duplicate"
+                                    name="./jcr:content/metadata/dam:isDuplicate"
+                                    readOnly="{Boolean}true"
+                                    resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        choicesCascading="default"
+                                        cq-msm-lockable="./metadata/dam:isDuplicate"
+                                        metaType="dropdown"
+                                        requiredCascading="default"
+                                        visibilityCascading="default"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <_x0031_771523426752
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="false"
+                                            value="false"/>
+                                        <_x0031_771523439929
+                                            jcr:primaryType="nt:unstructured"
+                                            text="true"
+                                            value="true"/>
+                                    </items>
+                                    <cascadeitems
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
+                                </_x0031_771523334727>
+                                <_x0031_771523473890
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/gui/components/admin/schemafield"
+                                    fieldLabel="Primary Asset Path"
+                                    fieldDescription="if Duplcate this value exists"
+                                    name="./jcr:content/metadata/dam:primaryAssetPath"
+                                    readOnly="{Boolean}true"
+                                    resourceType="granite/ui/components/coral/foundation/form/textarea">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cascadeVisibilityFrom="./jcr:content/metadata/dam:isDuplicate"
+                                        cascadeVisibilityValueSet="true"
+                                        cq-msm-lockable="./metadata/dam:primaryAssetPath"
+                                        metaType="text"
+                                        requiredCascading="default"
+                                        visibilityCascading="ruleBased"/>
+                                </_x0031_771523473890>
                             </items>
                         </col1>
                         <col2
@@ -2073,27 +2140,47 @@
                             listOrder="1"
                             oice-options="on">
                             <items jcr:primaryType="nt:unstructured">
-                                <_x0031_771443583437
+                                <EffectiveStartDate
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     displayedFormat="YYYY-MM-DD HH:mm"
-                                    fieldLabel="Effective Date"
-                                    name="./jcr:content/metadata/effectiveDate"
+                                    fieldLabel="Effective Start Date"
+                                    fieldDescription="Select the date and time when this asset becomes available for use. This controls when the asset is shown, not its legal expiration"
+                                    name="./jcr:content/metadata/EffectiveStartDate"
                                     resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                     type="datetime">
                                     <granite:data
                                         jcr:primaryType="nt:unstructured"
-                                        cq-msm-lockable="./metadata/effectiveDate"
+                                        cq-msm-lockable="./metadata/EffectiveStartDate"
                                         metaType="datepicker"
                                         requiredCascading="always"
                                         typeHint="Date"
                                         visibilityCascading="default"/>
-                                </_x0031_771443583437>
-                                <_x0031_771433013782
+                                </EffectiveStartDate>
+                                <EffectiveEndDate
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/gui/components/admin/schemafield"
+                                    displayedFormat="YYYY-MM-DD HH:mm"
+                                    fieldLabel="Effective Start Date"
+                                    fieldDescription="Select the date and time when this asset should no longer be shown. This guides asset visibility, not its legal expiration."
+                                    name="./jcr:content/metadata/EffectiveEndDate"
+                                    resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                    type="datetime">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="./metadata/EffectiveEndDate"
+                                        metaType="datepicker"
+                                        requiredCascading="always"
+                                        typeHint="Date"
+                                        visibilityCascading="default"/>
+                                </EffectiveEndDate>
+                                 
+                                <firm
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Firm"
+                                    fieldDescription="Select the firms this asset is approved for distribution to"
                                     multiple="true"
                                     name="./jcr:content/metadata/firm"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2161,12 +2248,13 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771433013782>
-                                <_x0031_771434402129
+                                </firm>
+                                <contentType
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Content Type"
+                                    fieldDescription="Select the format that best describes this asset. This helps users find the right type of content quickly"
                                     name="./jcr:content/metadata/contentType"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2309,12 +2397,14 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771434402129>
-                                <_x0031_771429254435
+                                </contentType>
+                                <stateAvailability
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="State Availability"
+                                    fieldDescription="Select the states where this asset is approved for distribution"
+                                    multiple="true"
                                     name="./jcr:content/metadata/stateAvailability"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2325,74 +2415,267 @@
                                         requiredCascading="always"
                                         visibilityCascading="default"/>
                                     <items jcr:primaryType="nt:unstructured">
-                                        <_x0031_771429285111
+                                        <_x0031_771961371631
                                             jcr:primaryType="nt:unstructured"
                                             selected="{Boolean}true"
-                                            text="All States"
-                                            value="All States"/>
-                                        <_x0031_771433241951
+                                            text="AL"
+                                            value="AL"/>
+                                        <_x0031_771961380236
                                             jcr:primaryType="nt:unstructured"
-                                            text="New York"
-                                            value="New York"/>
-                                        <_x0031_771433242982
+                                            selected="{Boolean}true"
+                                            text="AK"
+                                            value="AK"/>
+                                        <_x0031_772041101246
                                             jcr:primaryType="nt:unstructured"
-                                            text="California"
-                                            value="California"/>
-                                        <_x0031_771433244298
+                                            selected="{Boolean}true"
+                                            text="AZ"
+                                            value="AZ"/>
+                                        <_x0031_772041109636
                                             jcr:primaryType="nt:unstructured"
-                                            text="Oregon"
-                                            value="Oregon"/>
+                                            selected="{Boolean}true"
+                                            text="AR"
+                                            value="AR"/>
+                                        <_x0031_772041110678
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="CA"
+                                            value="CA"/>
+                                        <_x0031_772041110882
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="CO"
+                                            value="CO"/>
+                                        <_x0031_772041111080
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="CT"
+                                            value="CT"/>
+                                        <_x0031_772041111265
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="DE"
+                                            value="DE"/>
+                                        <_x0031_772041111481
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="DC"
+                                            value="DC"/>
+                                        <_x0031_772041111648
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="FL"
+                                            value="FL"/>
+                                        <_x0031_772041111833
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="GA"
+                                            value="GA"/>
+                                        <_x0031_772041112031
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="HI"
+                                            value="HI"/>
+                                        <_x0031_772041112206
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="ID"
+                                            value="ID"/>
+                                        <_x0031_772041112387
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="IL"
+                                            value="IL"/>
+                                        <_x0031_772041112563
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="IN"
+                                            value="IN"/>
+                                        <_x0031_772041112746
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="IA"
+                                            value="IA"/>
+                                        <_x0031_772041112948
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="KS"
+                                            value="KS"/>
+                                        <_x0031_772041113113
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="KY"
+                                            value="KY"/>
+                                        <_x0031_772041113280
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="LA"
+                                            value="LA"/>
+                                        <_x0031_772041113464
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="ME"
+                                            value="ME"/>
+                                        <_x0031_772041113817
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MD"
+                                            value="MD"/>
+                                        <_x0031_772041113996
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MA"
+                                            value="MA"/>
+                                        <_x0031_772041114190
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MI"
+                                            value="MI"/>
+                                        <_x0031_772041292795
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MN"
+                                            value="MN"/>
+                                        <_x0031_772041293457
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MS"
+                                            value="MS"/>
+                                        <_x0031_772041293857
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MO"
+                                            value="MO"/>
+                                        <_x0031_772041294158
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="MT"
+                                            value="MT"/>
+                                        <_x0031_772041294447
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NE"
+                                            value="NE"/>
+                                        <_x0031_772041294708
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NV"
+                                            value="NV"/>
+                                        <_x0031_772041294967
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NH"
+                                            value="NH"/>
+                                        <_x0031_772041295216
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NJ"
+                                            value="NJ"/>
+                                        <_x0031_772041295591
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NM"
+                                            value="NM"/>
+                                        <_x0031_772041296035
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NY"
+                                            value="NY"/>
+                                        <_x0031_772041296497
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="NC"
+                                            value="NC"/>
+                                        <_x0031_772041296940
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="ND"
+                                            value="ND"/>
+                                        <_x0031_772041302939
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="OH"
+                                            value="OH"/>
+                                        <_x0031_772041303484
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="OK"
+                                            value="OK"/>
+                                        <_x0031_772041303823
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="OR"
+                                            value="OR"/>
+                                        <_x0031_772041304165
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="PA"
+                                            value="PA"/>
+                                        <_x0031_772041304547
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="RI"
+                                            value="RI"/>
+                                        <_x0031_772041304880
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="SC"
+                                            value="SC"/>
+                                        <_x0031_772041305295
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="SD"
+                                            value="SD"/>
+                                        <_x0031_772041826997
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="TN"
+                                            value="TN"/>
+                                        <_x0031_772041827448
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="TX"
+                                            value="TX"/>
+                                        <_x0031_772041827946
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="UT"
+                                            value="UT"/>
+                                        <_x0031_772041828363
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="VT"
+                                            value="VT"/>
+                                        <_x0031_772041828763
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="VA"
+                                            value="VA"/>
+                                        <_x0031_772041829227
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="WA"
+                                            value="WA"/>
+                                        <_x0031_772041829713
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="WV"
+                                            value="WV"/>
+                                        <_x0031_772041830247
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="WI"
+                                            value="WI"/>
+                                        <_x0031_772041830614
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="{Boolean}true"
+                                            text="WY"
+                                            value="WY"/>
                                     </items>
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771429254435>
-                                <_x0031_771523334727
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="dam/gui/components/admin/schemafield"
-                                    emptyText="Select Option"
-                                    fieldLabel="Is Duplicate"
-                                    name="./jcr:content/metadata/dam:isDuplicate"
-                                    readOnly="{Boolean}true"
-                                    resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
-                                    <granite:data
-                                        jcr:primaryType="nt:unstructured"
-                                        choicesCascading="default"
-                                        cq-msm-lockable="./metadata/dam:isDuplicate"
-                                        metaType="dropdown"
-                                        requiredCascading="default"
-                                        visibilityCascading="default"/>
-                                    <items jcr:primaryType="nt:unstructured">
-                                        <_x0031_771523426752
-                                            jcr:primaryType="nt:unstructured"
-                                            selected="{Boolean}true"
-                                            text="false"
-                                            value="false"/>
-                                        <_x0031_771523439929
-                                            jcr:primaryType="nt:unstructured"
-                                            text="true"
-                                            value="true"/>
-                                    </items>
-                                    <cascadeitems
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771523334727>
-                                <_x0031_771523473890
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="dam/gui/components/admin/schemafield"
-                                    fieldLabel="Primary Asset Path"
-                                    name="./jcr:content/metadata/dam:primaryAssetPath"
-                                    readOnly="{Boolean}true"
-                                    resourceType="granite/ui/components/coral/foundation/form/textarea">
-                                    <granite:data
-                                        jcr:primaryType="nt:unstructured"
-                                        cascadeVisibilityFrom="./jcr:content/metadata/dam:isDuplicate"
-                                        cascadeVisibilityValueSet="true"
-                                        cq-msm-lockable="./metadata/dam:primaryAssetPath"
-                                        metaType="text"
-                                        requiredCascading="default"
-                                        visibilityCascading="ruleBased"/>
-                                </_x0031_771523473890>
+                                </stateAvailability>
+                               
                             </items>
                         </col2>
                         <col3
@@ -2401,11 +2684,12 @@
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             listOrder="2">
                             <items jcr:primaryType="nt:unstructured">
-                                <_x0031_771434105584
+                                <channel
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Channel"
+                                    fieldDescription="Select the channels through which this asset is intended to be"
                                     multiple="true"
                                     name="./jcr:content/metadata/channel"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2465,12 +2749,13 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771434105584>
-                                <_x0031_771433875814
+                                </channel>
+                                <approvalLevel
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Approval Level"
+                                    fieldDescription="Indicates who is permitted to view or use this asset, based on approval and audience restrictions"
                                     multiple="true"
                                     name="./jcr:content/metadata/approvalLevel"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2506,12 +2791,13 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771433875814>
+                                </approvalLevel>
                                 <_x0031_771432748023
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Search Synonyms"
+                                    fieldDescription="Select common abbreviations or alternate terms users may search for to help surface this asset in search results"
                                     multiple="true"
                                     name="./jcr:content/metadata/searchSynonyms"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
@@ -2555,10 +2841,10 @@
                                             jcr:primaryType="nt:unstructured"
                                             text="VA"
                                             value="VA"/>
-                                        <_x0031_771432901334
+                                        <fia
                                             jcr:primaryType="nt:unstructured"
-                                            text="SK"
-                                            value="SK"/>
+                                            text="FIA"
+                                            value="FIA"/>    
                                         <_x0031_771432914278
                                             jcr:primaryType="nt:unstructured"
                                             text="FRA"
@@ -2569,22 +2855,27 @@
                                             value="FRA MVA"/>
                                         <_x0031_771432945148
                                             jcr:primaryType="nt:unstructured"
-                                            text="IA"
-                                            value="IA"/>
+                                            text="SPIA"
+                                            value="SPIA"/>
                                         <_x0031_771432957944
                                             jcr:primaryType="nt:unstructured"
                                             text="GIB"
                                             value="GIB"/>
+                                        <oyt
+                                            jcr:primaryType="nt:unstructured"
+                                            text="OYT"
+                                            value="OYT"/>
                                     </items>
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
                                 </_x0031_771432748023>
-                                <_x0031_771443397609
+                                <assetStatus
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
                                     fieldLabel="Asset Status"
+                                    fieldDescription="ndicates whether the asset is currently approved for use or expired and no longer valid."
                                     name="./jcr:content/metadata/assetStatus"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -2607,7 +2898,7 @@
                                     <cascadeitems
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/cascadeitems"/>
-                                </_x0031_771443397609>
+                                </assetStatus>
                             </items>
                         </col3>
                     </items>
