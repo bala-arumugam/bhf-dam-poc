@@ -260,6 +260,8 @@
                 fieldTitle="BHF Predicate"
                 fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
                 renderType="checkbox">
+                <items jcr:primaryType="nt:unstructured">
+                </items>
         </bhfgroup>
         <filetypelist
             jcr:primaryType="nt:unstructured"
