@@ -804,7 +804,7 @@
                                         jcr:primaryType="nt:unstructured"
                                         cq-msm-lockable="./metadata/legalNumber"
                                         metaType="text"
-                                        requiredCascading="default"
+                                        requiredCascading="always"
                                         visibilityCascading="default"/>
                                 </legalenumber>
 
@@ -2829,6 +2829,10 @@
                                             jcr:primaryType="nt:unstructured"
                                             text="SLPP II"
                                             value="SLPP II"/>
+                                        <rila
+                                            jcr:primaryType="nt:unstructured"
+                                            text="RILA"
+                                            value="RILA"/>    
                                         <_x0031_771432855720
                                             jcr:primaryType="nt:unstructured"
                                             text="Pay Plus"
