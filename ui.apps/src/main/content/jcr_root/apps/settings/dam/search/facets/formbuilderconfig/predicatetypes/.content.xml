@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    mapToPropertyClass="field-mvtext-descriptor property-picker-field do-not-prepend-prefix"
+    pickerSrc="/mnt/overlay/dam/gui/content/commons/propertypicker/picker.html?_charset_=utf-8&amp;root=%2F"
+    suggestionSrc="/mnt/overlay/dam/gui/content/commons/propertypicker/suggestion.html?_charset_=utf-8&amp;root=%2F{&amp;query}">
+    <items jcr:primaryType="nt:unstructured">
+        <pathbrowser
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Path Browser"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/pathbrowserpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate"
+            fieldTitle="Path Browser Predicate"
+            fieldViewResourceType="granite/ui/components/coral/foundation/form/pathfield"
+            renderType="text"/>
+        <property
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Property"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/propertypredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+            fieldTitle="Property Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="text"/>
+        <multivalueproperty
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Multi Value Property"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/multivaluepropertypredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/multivaluepropertypredicate"
+            fieldTitle="Multi Value Property Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="text"/>
+        <tags
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Tags"
+            fieldPropResourceType="cq/gui/components/common/admin/customsearch/formbuilder/predicatefields/tagspredicatefield"
+            fieldResourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+            fieldTitle="Tags Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="text"/>
+        <path
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Path"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/pathpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/pathpredicate"
+            fieldTitle="Path Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <relativedate
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Date"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/relativedatepredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/relativedatepredicate"
+            fieldTitle="Relative Date Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <listoptions
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Options"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/listoptionspredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+            fieldTitle="Options Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <range
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Range"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/rangepredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+            fieldTitle="Range Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="text"/>
+        <daterange
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Date"
+            fieldPropResourceType="cq/gui/components/common/admin/customsearch/formbuilder/predicatefields/daterangepredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/daterangepredicate"
+            fieldTitle="Date Range Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/datepicker"
+            renderType="datepicker"/>
+        <filesize
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="File Size"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/filesizepredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/filesizepredicate"
+            fieldTitle="File Size Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <publish
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Publish Status"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/publishpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate"
+            fieldTitle="Publish Status Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <status
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Approval Status"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/statuspredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/statuspredicate"
+            fieldTitle="Approval Status Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <rating
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Average Rating"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/ratingpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate"
+            fieldTitle="Rating Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <checkout
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Checkout Status"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/checkoutpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkoutpredicate"
+            fieldTitle="Checkout Status Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <checkedoutby
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Checked Out By"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/checkedoutbypredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkedoutbypredicate"
+            fieldTitle="Checked Out By Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="text"/>
+        <expirystatus
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Expiry Status"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/expiredassetpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate"
+            fieldTitle="Expiry Status Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <memberof
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Member of Collection"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/memberofpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/memberofpredicate"
+            fieldTitle="Member of collection predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="memberof"/>
+        <hidden
+            jcr:primaryType="nt:unstructured"
+            fieldPropResourceType="cq/gui/components/common/admin/customsearch/formbuilder/predicatefields/hiddenpredicatefield"
+            fieldResourceType="granite/ui/components/coral/foundation/form/hidden"
+            fieldTitle="Hidden Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="hidden"/>
+        <dampath
+            jcr:primaryType="nt:unstructured"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/dampathhiddenpredicatefield"
+            fieldResourceType="dam/gui/coral/components/commons/ui/form/dampathhiddenfield"
+            fieldTitle="Path Hidden Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="dampath"/>
+        <statusgroup
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Status"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/statusgrouppredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
+            fieldTitle="Status Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox">
+            <items jcr:primaryType="nt:unstructured">
+                <publish
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate"
+                    fieldLabel="Publish Status"
+                    isSuggestable="{Boolean}true"
+                    listOrder="6"
+                    metaType="publish"
+                    name="jcr:content/cq:lastReplicationAction"
+                    open="{Boolean}false"
+                    optionPaths="/libs/dam/options/predicates/publish"
+                    singleSelect="{Boolean}true"
+                    text="Publish Status"
+                    value="true"/>
+                <status
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/statuspredicate"
+                    fieldLabel="Approval Status"
+                    isSuggestable="{Boolean}true"
+                    listOrder="7"
+                    metaType="status"
+                    name="jcr:content/metadata/dam:status"
+                    open="{Boolean}false"
+                    optionPaths="/libs/dam/options/predicates/status"
+                    singleSelect="{Boolean}true"
+                    text="Approval Status"
+                    value="true"/>
+                <checkout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkoutpredicate"
+                    fieldLabel="Checkout Status"
+                    isSuggestable="{Boolean}true"
+                    listOrder="8"
+                    metaType="checkout"
+                    name="jcr:content/cq:drivelock"
+                    open="{Boolean}false"
+                    optionPaths="/libs/dam/options/predicates/checkout"
+                    singleSelect="{Boolean}true"
+                    text="Checkout Status"/>
+            </items>
+        </statusgroup>
+        <insightsgroup
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Insights"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/insightsgrouppredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
+            fieldTitle="Insights Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox">
+            <items jcr:primaryType="nt:unstructured">
+                <usagescore
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                    fieldLabel="Range Predicate"
+                    globalMinOffset="1"
+                    listOrder="17"
+                    metaType="range"
+                    name="jcr:content/usages/dam:score"
+                    text="Usage Score"/>
+                <impressionscore
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                    fieldLabel="Range Predicate"
+                    globalMinOffset="1"
+                    listOrder="18"
+                    metaType="range"
+                    name="jcr:content/performance/dam:impressionCount"
+                    text="Impression Score"/>
+                <clickscore
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                    fieldLabel="Range Predicate"
+                    globalMinOffset="1"
+                    listOrder="19"
+                    metaType="range"
+                    name="jcr:content/performance/dam:clickCount"
+                    text="Click Score"/>
+                <channels
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                    listOrder="20"
+                    metaType="listoptions"
+                    name="jcr:content/usages/usedBy"
+                    optionPaths="/libs/dam/options/predicates/solutions"
+                    selectAllMode="{Boolean}true"
+                    text="Channels"
+                    value="true"/>
+            </items>
+        </insightsgroup>
+        <bhfgroup
+                jcr:primaryType="nt:unstructured"
+                fieldLabel="BrightHouse Financial"
+                fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/statusgrouppredicatefield"
+                fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
+                fieldTitle="BHF Predicate"
+                fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+                renderType="checkbox">
+        </bhfgroup>
+        <filetypelist
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="File Type"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/filetypepredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/filetypepredicate"
+            fieldTitle="File Type Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/formbuilder/checkbox"
+            renderType="checkbox"/>
+        <searchtype
+            jcr:primaryType="nt:unstructured"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/searchtypepredicatefield"
+            fieldResourceType="granite/ui/components/coral/foundation/form/hidden"
+            fieldTitle="Search Type Predicate"
+            fieldViewResourceType="granite/ui/components/foundation/form/textfield"
+            renderType="hidden">
+            <granite:rendercondition
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
+                expression="false"/>
+        </searchtype>
+        <similaritysearch
+            jcr:primaryType="nt:unstructured"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/similaritysearchpredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/similaritysearchpredicate"
+            fieldTitle="Similarity Search Predicate"
+            renderType="similaritysearch">
+            <granite:rendercondition
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
+                expression="false"/>
+        </similaritysearch>
+        <multipathvalueproperty
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Multi Path Value Property Predicate"
+            fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/multipathvaluepropertypredicatefield"
+            fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/multipathvaluepropertypredicate"
+            fieldTitle="Multi Path Value Property Predicate"
+            fieldViewResourceType="granite/ui/components/coral/foundation/form/pathfield"
+            renderType="text"/>
+    </items>
+</jcr:root>

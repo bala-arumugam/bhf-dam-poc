@@ -7,7 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="Assets Admin Search Rail"
         sling:resourceType="granite/ui/components/foundation/contsys"
-        maxGeneratedOrder="27"
+        maxGeneratedOrder="40"
         predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
         <items jcr:primaryType="nt:unstructured">
             <pathbrowser
@@ -161,40 +161,14 @@
                         value="true"/>
                 </items>
             </insightsgroup>
-            <channels jcr:primaryType="nt:unstructured"/>
-            <mainasset
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/form/hidden"
-                listOrder="16"
-                metaType="hidden"
-                name="mainasset"
-                value="true"/>
-            <memberof
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/memberofpredicate"
-                fieldLabel="Member of  Collection"
-                metaType="memberof"
-                text="Collection"/>
-            <asset
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/form/hidden"
-                metaType="hidden"
-                name="group.2_group.type"
-                value="dam:Asset"/>
-            <directory
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/form/hidden"
-                metaType="hidden"
-                name="group.1_group.type"
-                value="nt:folder"/>
             <bhfgroup
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
-                listOrder="35"
-                metaType="bhfgroup"
-                text="BrightHouse Financial group">
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
+                    listOrder="35"
+                    metaType="bhfgroup"
+                    text="BrightHouse Financial">
                 <items jcr:primaryType="nt:unstructured">
-                    <_x0031_771858160963
+                    <productname
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
                             listOrder="29"
@@ -252,8 +226,8 @@
                                     text="Prime Options with FlexChoice Access"
                                     value="Prime Options with FlexChoice Access"/>
                         </items>
-                    </_x0031_771858160963>
-                    <_x0031_771859136320
+                    </productname>
+                    <rmnumber
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
                             fieldLabel="Property Predicate"
@@ -261,7 +235,7 @@
                             metaType="property"
                             name="jcr:content/metadata/rmNumber"
                             text="RM Number"/>
-                    <_x0031_771858502384
+                    <productvariant
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
                             listOrder="30"
@@ -292,8 +266,8 @@
                                     text="Shield Level Pay Plus II Advisory"
                                     value="Shield Level Pay Plus II Advisory"/>
                         </items>
-                    </_x0031_771858502384>
-                    <_x0031_771858615682
+                    </productvariant>
+                    <firm
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
                             listOrder="31"
@@ -355,8 +329,8 @@
                                     text="LPL"
                                     value="LPL"/>
                         </items>
-                    </_x0031_771858615682>
-                    <_x0031_771859200777
+                    </firm>
+                    <contenttype
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
                             listOrder="34"
@@ -495,8 +469,8 @@
                                     text="Sales Material"
                                     value="Sales Material"/>
                         </items>
-                    </_x0031_771859200777>
-                    <_x0031_771857848241
+                    </contenttype>
+                    <productcategory
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
                             listOrder="28"
@@ -523,25 +497,51 @@
                                     text="Group Annuities"
                                     value="Group Annuities"/>
                         </items>
-                    </_x0031_771857848241>
-                    <_x0031_770909428534
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="23"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/dam:isDuplicate"
-                        singleSelect="{Boolean}false"
-                        text="Duplicate Asset"
-                        value="true">
+                    </productcategory>
+                    <duplicateasset
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="23"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/dam:isDuplicate"
+                            singleSelect="{Boolean}false"
+                            text="Duplicate Asset"
+                            value="true">
                         <items jcr:primaryType="nt:unstructured">
                             <_x0031_770909461648
-                                jcr:primaryType="nt:unstructured"
-                                text="True"
-                                value="true"/>
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
                         </items>
-                    </_x0031_770909428534>
+                    </duplicateasset>
                 </items>
             </bhfgroup>
+            <channels jcr:primaryType="nt:unstructured"/>
+            <mainasset
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                listOrder="16"
+                metaType="hidden"
+                name="mainasset"
+                value="true"/>
+            <memberof
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/memberofpredicate"
+                fieldLabel="Member of  Collection"
+                metaType="memberof"
+                text="Collection"/>
+            <asset
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                metaType="hidden"
+                name="group.2_group.type"
+                value="dam:Asset"/>
+            <directory
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                metaType="hidden"
+                name="group.1_group.type"
+                value="nt:folder"/>
             <typeor
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/hidden"
