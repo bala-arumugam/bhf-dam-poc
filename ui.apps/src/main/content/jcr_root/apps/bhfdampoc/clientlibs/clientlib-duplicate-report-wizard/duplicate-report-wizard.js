@@ -26,18 +26,6 @@
         });
     }
 
-    function setExportUrlConfigure(e, to){
-        if( (getStepNumber() != 2) || (REPORT_TYPE !== getReportType())){
-            return;
-        }
-
-        var $interStep = $(to);
-
-        $interStep.on("foundation-contentloaded",function(){
-            $(".cq-dam-assetthumbnail").find("coral-card-title").html(REPORT_TYPE_DETAIL);
-        });
-    }
-
     function setExportUrl(e, to){
         if( (getStepNumber() != 3) || (REPORT_TYPE !== getReportType())){
             return;
