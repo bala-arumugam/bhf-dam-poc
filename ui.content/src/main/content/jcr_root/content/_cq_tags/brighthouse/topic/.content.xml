@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Funnel stage alignment &#xd;&#xa;&#xd;&#xa;Marketing classification"
+    jcr:lastModified="{Date}2026-03-10T12:10:04.801-05:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="cq:Tag"
+    jcr:title="topic"
+    sling:resourceType="cq/tagging/components/tag">
+    <market-volatility/>
+    <guaranteed-income/>
+    <retirement-planning/>
+    <retirement-solution/>
+    <market-performance/>
+    <tax/>
+    <investing-perspectives/>
+    <behavioral-finance/>
+    <rilas/>
+    <fias/>
+    <annuities/>
+    <building-your-business/>
+    <next-level-prospecting/>
+    <client-relationships-_x0026_-retention/>
+    <long-term-care/>
+    <women-in-retirement/>
+    <life-insurance/>
+    <quarterly-market-outlook/>
+    <insights/>
+    <succession-planning/>
+    <stress-test/>
+    <working-with-women/>
+    <working-with-black-african-american/>
+    <working-with-hispanic-latino/>
+    <health-care/>
+    <financial-strength/>
+    <about-brighthouse-financial/>
+    <advanced-markets-group-_x0028_amg_x0029_/>
+    <investment-material/>
+    <underwriting/>
+</jcr:root>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Conversational discovery &#xd;&#xa;AI search relevance &#xd;&#xa;Sales enablement &#xd;&#xa;"
+    jcr:lastModified="{Date}2026-03-10T12:10:25.530-05:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="cq:Tag"
+    jcr:title="productLaunchUpdate"
+    sling:resourceType="cq/tagging/components/tag">
+    <shield-suite-data-updates/>
+    <slpp-rate-change/>
+    <fund-expansion/>
+    <inherited-ira-launch/>
+    <shield-suite-product-enhancements/>
+    <mgir-change/>
+</jcr:root>
