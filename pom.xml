@@ -774,6 +774,11 @@ Bundle-DocURL:
         <version>1.0.1</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>org.webjars.npm</groupId>
+        <artifactId>lodash</artifactId>
+        <version>4.17.21</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>

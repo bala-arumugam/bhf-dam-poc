@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="nt:unstructured"
+          title="Duplicate Assets"
+          description="Report listing flagged duplicate assets"
+          icon="duplicate"
+          type="duplicateassetsreport"
+          wizard="/apps/bhfdampoc/asset_reports/duplicateassetsreportwizard.html"/>
