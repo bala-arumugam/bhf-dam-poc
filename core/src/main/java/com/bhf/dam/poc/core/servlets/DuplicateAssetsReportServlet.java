@@ -25,7 +25,7 @@ import java.util.*;
         property = {
                 "sling.servlet.methods=POST",
                 "sling.servlet.resourceTypes=sling/servlet/default",
-                "sling.servlet.selectors=bhfdamreport",
+                "sling.servlet.selectors=bhfreport",
                 "sling.servlet.extensions=json"
         }
 )
