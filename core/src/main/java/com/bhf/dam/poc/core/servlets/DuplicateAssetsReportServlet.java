@@ -1,6 +1,5 @@
 package com.bhf.dam.poc.core.servlets;
 
-import com.day.cq.commons.TidyJSONWriter;
 import com.google.gson.JsonObject;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -119,7 +118,7 @@ public class DuplicateAssetsReportServlet extends SlingAllMethodsServlet {
         }
 
         jobNode = baseNode.addNode(jobNodeName.replaceAll("/", "-"), "nt:unstructured");
-        jobNode.setProperty("reportType", request.getParameter("dam-asset-report-type"));
+        jobNode.setProperty("reportType", "duplicate-assets-report");
         jobNode.setProperty("rootPath", path);
         jobNode.setProperty("jobTitle", title);
         jobNode.setProperty("jobDescription", desc);
