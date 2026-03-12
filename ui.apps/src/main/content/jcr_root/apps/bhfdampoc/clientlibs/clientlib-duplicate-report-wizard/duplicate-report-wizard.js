@@ -3,7 +3,7 @@
 
     var _ = window._,
         initialized = false,
-        REPORT_TYPE = "duplicate-assets-report",
+        REPORT_TYPE = "duplicateassetsreport",
         EXPORT_REQ_URL = "/apps/bhfdampoc/duplicate-assets.bhfdamreport.json",
         REPORT_TYPE_DETAIL = "Duplicate Assets",
         REPORT_WIZARD = "/mnt/overlay/dam/gui/content/reports/createreportwizard.html";

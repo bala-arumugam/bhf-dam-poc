@@ -1,8 +1,8 @@
 {
     "scripts": [
         "create service user report-service with path system/services/bhfdampoc",
-        "set ACL for report-service\n allow jcr:all on /content\nend",
-        "set ACL for report-service\n allow jcr:all on /apps\nend",
+        "set ACL for report-service\n allow jcr:read on /content\nend",
+        "set ACL for report-service\n allow jcr:read on /apps\nend",
         "set ACL for report-service\n allow jcr:all on /var\nend"
     ]
 }

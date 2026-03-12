@@ -118,7 +118,7 @@ public class DuplicateAssetsReportServlet extends SlingAllMethodsServlet {
         }
 
         jobNode = baseNode.addNode(jobNodeName.replaceAll("/", "-"), "nt:unstructured");
-        jobNode.setProperty("reportType", "duplicate-assets-report");
+        jobNode.setProperty("reportType", request.getParameter("dam-asset-report-type"));
         jobNode.setProperty("rootPath", path);
         jobNode.setProperty("jobTitle", title);
         jobNode.setProperty("jobDescription", desc);

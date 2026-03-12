@@ -62,7 +62,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
 
             String reportType = reportNode.getProperty("reportType").getString();
 
-            if (!reportType.equals("duplicate-assets-report")) {
+            if (!reportType.equals("duplicateassetsreport")) {
                 return JobResult.OK;
             }
 
