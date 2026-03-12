@@ -16,7 +16,6 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.servlet.Servlet;
-import javax.servlet.ServletException;
 import java.io.IOException;
 import java.util.*;
 

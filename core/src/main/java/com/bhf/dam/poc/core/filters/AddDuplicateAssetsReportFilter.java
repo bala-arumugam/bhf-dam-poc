@@ -45,8 +45,6 @@ public class AddDuplicateAssetsReportFilter implements Filter {
     private static final String OTB_REPORTS_PATH =
             "dam/content/reports/availablereports";
 
-    @Reference
-    private ExpressionResolver expressionResolver;
 
     @Override
     public void init(FilterConfig filterConfig) {
@@ -78,7 +76,7 @@ public class AddDuplicateAssetsReportFilter implements Filter {
 
         AbstractDataSource ds = (AbstractDataSource)request.getAttribute(DataSource.class.getName());
 
-        final List<Resource> sortedList = new ArrayList<Resource>();
+        final List<Resource> sortedList = new ArrayList<>();
         Iterator<Resource> items = ds.iterator();
 
         while(items.hasNext()){
@@ -89,15 +87,13 @@ public class AddDuplicateAssetsReportFilter implements Filter {
 
         ds = new AbstractDataSource() {
             public Iterator<Resource> iterator() {
-                return new TransformIterator(new PagingIterator(sortedList.iterator(), 0, 100), new Transformer() {
-                    public Object transform(Object o) {
-                        final Resource r = (Resource)o;
-                        return new ResourceWrapper(r) {
-                            public String getResourceType() {
-                                return itemRT;
-                            }
-                        };
-                    }
+                return new TransformIterator(new PagingIterator(sortedList.iterator(), 0, 100), o -> {
+                    final Resource r = (Resource)o;
+                    return new ResourceWrapper(r) {
+                        public String getResourceType() {
+                            return itemRT;
+                        }
+                    };
                 });
             }
         };
