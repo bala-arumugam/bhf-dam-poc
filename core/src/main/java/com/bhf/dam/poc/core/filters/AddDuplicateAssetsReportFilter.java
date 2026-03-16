@@ -1,11 +1,9 @@
 package com.bhf.dam.poc.core.filters;
 
 import com.adobe.granite.ui.components.Config;
-import com.adobe.granite.ui.components.ExpressionResolver;
 import com.adobe.granite.ui.components.PagingIterator;
 import com.adobe.granite.ui.components.ds.AbstractDataSource;
 import com.adobe.granite.ui.components.ds.DataSource;
-import org.apache.commons.collections.Transformer;
 import org.apache.commons.collections.iterators.TransformIterator;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -15,7 +13,6 @@ import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.engine.EngineConstants;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,7 +37,7 @@ public class AddDuplicateAssetsReportFilter implements Filter {
     private static final Logger logger = LoggerFactory.getLogger(AddDuplicateAssetsReportFilter.class);
 
     private static final String CUSTOM_REPORT_PATH =
-            "/apps/dam/assetreports/duplicateassetsreport";
+            "/apps/bhfdampoc/dam/assetreports/duplicateassetsreport";
 
     private static final String OTB_REPORTS_PATH =
             "dam/content/reports/availablereports";
