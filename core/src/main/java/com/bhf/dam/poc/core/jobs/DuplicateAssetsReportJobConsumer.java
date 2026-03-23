@@ -48,6 +48,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
         Map<String, Object> authInfo = Map.of(
                 ResourceResolverFactory.SUBSERVICE, "report-service"
         );
+        File csvFile = null;
 
         try (ResourceResolver resolver =
                      resolverFactory.getServiceResourceResolver(authInfo)) {
@@ -58,7 +59,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
 
             String reportTitle = reportNode.getProperty("jobTitle").getString();
 
-            String rootPath = reportNode.getProperty("rootPath").getString();
+            String rootPath = reportNode.getProperty("path").getString();
 
             String reportType = reportNode.getProperty("reportType").getString();
 
@@ -84,7 +85,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
             List<Node> duplicateAssets =
                     findDuplicateAssets(session, rootPath);
 
-            File csvFile = generateCsv(
+            csvFile = generateCsv(
                     columnDefinitions,
                     duplicateAssets
             );
@@ -94,7 +95,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
             reportNode.setProperty("jobStatus", "completed");
             session.save();
 
-            return JobResult.OK;
+            //return JobResult.OK;
 
         } catch (Exception e) {
             logger.error("Error processing Duplicate Assets Report job", e);
@@ -104,7 +105,12 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
                 throw new RuntimeException(ex);
             }
             return JobResult.FAILED;
+        } finally {
+            if (csvFile != null && csvFile.exists()) {
+                csvFile.delete();
+            }
         }
+        return JobResult.OK;
     }
 
     private List<ColumnDefinition> buildColumnDefinitions(String[] columns,
