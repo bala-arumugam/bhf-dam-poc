@@ -4,7 +4,7 @@
     jcr:lastModified="{Date}2026-03-10T12:10:25.530-05:00"
     jcr:lastModifiedBy="admin"
     jcr:primaryType="cq:Tag"
-    jcr:title="productLaunchUpdate"
+    jcr:title="ProductLaunchUpdate"
     sling:resourceType="cq/tagging/components/tag">
     <shield-suite-data-updates/>
     <slpp-rate-change/>

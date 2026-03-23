@@ -4,7 +4,7 @@
     jcr:lastModified="{Date}2026-03-10T12:10:04.801-05:00"
     jcr:lastModifiedBy="admin"
     jcr:primaryType="cq:Tag"
-    jcr:title="topic"
+    jcr:title="Topic"
     sling:resourceType="cq/tagging/components/tag">
     <market-volatility/>
     <guaranteed-income/>

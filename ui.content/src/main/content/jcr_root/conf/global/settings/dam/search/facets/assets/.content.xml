@@ -91,10 +91,17 @@
                         listOrder="9"
                         metaType="checkedoutby"
                         text="Checked Out By"/>
+                    <legalnumber
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/legalnumberpredicate"
+                        listOrder="10"
+                        metaType="legalnumber"
+                        name="jcr:content/metadata/legalNumber"
+                        text="legal Number"/>
                     <expirystatus
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate"
-                        listOrder="10"
+                        listOrder="11"
                         metaType="expirystatus"
                         name="jcr:content/metadata/prism:expirationDate"
                         text="Expiry"
@@ -227,14 +234,6 @@
                                     value="Prime Options with FlexChoice Access"/>
                         </items>
                     </productname>
-                    <rmnumber
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
-                            fieldLabel="Property Predicate"
-                            listOrder="33"
-                            metaType="property"
-                            name="jcr:content/metadata/rmNumber"
-                            text="RM Number"/>
                     <productvariant
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
@@ -498,6 +497,25 @@
                                     value="Group Annuities"/>
                         </items>
                     </productcategory>
+                    <rmNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                            fieldLabel="Property Predicate"
+                            listOrder="35"
+                            metaType="property"
+                            name="jcr:content/metadata/rmNumber"
+                            text="Rm Number"/>
+                    <legalexpirationdate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/daterangepredicate"
+                            afterLabel="After"
+                            beforeLabel="Before"
+                            displayedFormat="D MMMM YYYY hh:mm a"
+                            fieldLabel="Legal Expiration Date"
+                            listOrder="41"
+                            metaType="daterange"
+                            name="jcr:content/metadata/prism:expirationDate"
+                            quickOptions="lastDay,lastWeek,lastMonth"/>
                     <duplicateasset
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"

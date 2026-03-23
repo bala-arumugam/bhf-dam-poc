@@ -2,11 +2,11 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:description="Funnel stage alignment &#xd;&#xa;&#xd;&#xa;Marketing classification"
     jcr:primaryType="cq:Tag"
-    jcr:title="category"
+    jcr:title="Category"
     sling:resourceType="cq/tagging/components/tag">
-    <brand-awareness-/>
-    <thought-leadership-/>
-    <product-awareness-/>
+    <brand-awareness/>
+    <thought-leadership/>
+    <product-awareness/>
     <product-consideration/>
     <education-_x0026_-interactive-tools/>
     <practice-management/>
