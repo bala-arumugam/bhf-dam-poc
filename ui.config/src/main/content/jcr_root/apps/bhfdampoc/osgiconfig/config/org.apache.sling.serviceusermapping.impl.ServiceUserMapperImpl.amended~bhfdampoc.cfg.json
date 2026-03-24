@@ -1,5 +1,6 @@
 {
     "user.mapping": [
-        "bhfdampoc.core:dam-service=dam-service"
+        "bhfdampoc.core:dam-service=dam-service",
+        "bhfdampoc.core:report-service=report-service"
     ]
 }

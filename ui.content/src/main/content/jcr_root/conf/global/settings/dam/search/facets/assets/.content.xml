@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2026-02-16T20:13:20.369+05:30"
@@ -7,7 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="Assets Admin Search Rail"
         sling:resourceType="granite/ui/components/foundation/contsys"
-        maxGeneratedOrder="27"
+        maxGeneratedOrder="50"
         predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
         <items jcr:primaryType="nt:unstructured">
             <pathbrowser
@@ -168,6 +168,372 @@
                         value="true"/>
                 </items>
             </insightsgroup>
+            <bhfgroup
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
+                    listOrder="35"
+                    metaType="bhfgroup"
+                    text="BrightHouse Financial">
+                <items jcr:primaryType="nt:unstructured">
+                    <productname
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="29"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/productName"
+                            text="Product Name"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_771858207627
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SmartCare"
+                                    value="SmartCare"/>
+                            <_x0031_771858221531
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SmartGuard Plus"
+                                    value="SmartGuard Plus"/>
+                            <_x0031_771858235700
+                                    jcr:primaryType="nt:unstructured"
+                                    text="One Year Term Life Insurance"
+                                    value="One Year Term Life Insurance"/>
+                            <_x0031_771858244779
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level II Annuity"
+                                    value="Shield Level II Annuity"/>
+                            <_x0031_771858251212
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level Pay Plus II Annuity"
+                                    value="Shield Level Pay Plus II Annuity"/>
+                            <_x0031_771858259738
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Variable Annuity with FlexChoice Access"
+                                    value="Variable Annuity with FlexChoice Access"/>
+                            <_x0031_771858295004
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SecureKey Fixed Indexed Annuity"
+                                    value="SecureKey Fixed Indexed Annuity"/>
+                            <_x0031_771858304060
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Fixed Rate Annuity"
+                                    value="Fixed Rate Annuity"/>
+                            <_x0031_771858351193
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Fixed Rate Annuity MVA"
+                                    value="Fixed Rate Annuity MVA"/>
+                            <_x0031_771858361270
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Income Annuity"
+                                    value="Income Annuity"/>
+                            <_x0031_771858371370
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Guaranteed Income Builder"
+                                    value="Guaranteed Income Builder"/>
+                            <_x0031_771858379310
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Prime Options with FlexChoice Access"
+                                    value="Prime Options with FlexChoice Access"/>
+                        </items>
+                    </productname>
+                    <productvariant
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="30"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/productVariant"
+                            singleSelect="{Boolean}true"
+                            text="Product Variant"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_771858549298
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level II 3-Year Annuity"
+                                    value="Shield Level II 3-Year Annuity"/>
+                            <_x0031_771858560629
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level II 6-Year Annuity"
+                                    value="Shield Level II 6-Year Annuity"/>
+                            <_x0031_771858566623
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level II Advisory Annuity"
+                                    value="Shield Level II Advisory Annuity"/>
+                            <_x0031_771858574783
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level Pay Plus II Annuity"
+                                    value="Shield Level Pay Plus II Annuity"/>
+                            <_x0031_771858587567
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Shield Level Pay Plus II Advisory"
+                                    value="Shield Level Pay Plus II Advisory"/>
+                        </items>
+                    </productvariant>
+                    <firm
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="31"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/firm"
+                            text="Firm"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_771858735219
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Core"
+                                    value="Core"/>
+                            <_x0031_771858746147
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Merrill Lynch"
+                                    value="Merrill Lynch"/>
+                            <_x0031_771858752987
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Morgan Stanley"
+                                    value="Morgan Stanley"/>
+                            <_x0031_771858755650
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Citigroup"
+                                    value="Citigroup"/>
+                            <_x0031_771858771411
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primerica"
+                                    value="Primerica"/>
+                            <_x0031_771858780492
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Wells Fargo"
+                                    value="Wells Fargo"/>
+                            <_x0031_771858788203
+                                    jcr:primaryType="nt:unstructured"
+                                    text="JP Morgan Chase"
+                                    value="JP Morgan Chase"/>
+                            <_x0031_771858796227
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Raymond James"
+                                    value="Raymond James"/>
+                            <_x0031_771858811467
+                                    jcr:primaryType="nt:unstructured"
+                                    text="UBS"
+                                    value="UBS"/>
+                            <_x0031_771858813749
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Truist"
+                                    value="Truist"/>
+                            <_x0031_771858815789
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Schwab"
+                                    value="Schwab"/>
+                            <_x0031_771858834371
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MSG/IMO"
+                                    value="MSG/IMO"/>
+                            <_x0031_771858839318
+                                    jcr:primaryType="nt:unstructured"
+                                    text="LPL"
+                                    value="LPL"/>
+                        </items>
+                    </firm>
+                    <contenttype
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="34"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/contentType"
+                            singleSelect="{Boolean}true"
+                            text="Content Type"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_771859221411
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Presentation"
+                                    value="Presentation"/>
+                            <_x0031_771859227561
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Flyer"
+                                    value="Flyer"/>
+                            <_x0031_771859227777
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sales Idea"
+                                    value="Sales Idea"/>
+                            <_x0031_771859227946
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Brochure"
+                                    value="Brochure"/>
+                            <_x0031_771859228090
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Digital Tool"
+                                    value="Digital Tool"/>
+                            <_x0031_771859228251
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Print Ad"
+                                    value="Print Ad"/>
+                            <_x0031_771859228393
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Digital Ad"
+                                    value="Digital Ad"/>
+                            <_x0031_771859228538
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Rate Flyer"
+                                    value="Rate Flyer"/>
+                            <_x0031_771859228682
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Minimum Rate Flyer"
+                                    value="Minimum Rate Flyer"/>
+                            <_x0031_771859228834
+                                    jcr:primaryType="nt:unstructured"
+                                    text="New Contract Rate Flyer"
+                                    value="New Contract Rate Flyer"/>
+                            <_x0031_771859228985
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Withdrawal Rate Flyer"
+                                    value="Withdrawal Rate Flyer"/>
+                            <_x0031_771859229137
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Social Post"
+                                    value="Social Post"/>
+                            <_x0031_771859229298
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Webpage"
+                                    value="Webpage"/>
+                            <_x0031_771859229450
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Email"
+                                    value="Email"/>
+                            <_x0031_771859229609
+                                    jcr:primaryType="nt:unstructured"
+                                    text="White Paper"
+                                    value="White Paper"/>
+                            <_x0031_771859229770
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Worksheet"
+                                    value="Worksheet"/>
+                            <_x0031_771859229954
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Article"
+                                    value="Article"/>
+                            <_x0031_771859230121
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Video"
+                                    value="Video"/>
+                            <_x0031_771859230282
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Continuing Education"
+                                    value="Continuing Education"/>
+                            <_x0031_771859230465
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Invitation"
+                                    value="Invitation"/>
+                            <_x0031_771859230635
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Mail Merge"
+                                    value="Mail Merge"/>
+                            <_x0031_771859393863
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Prospectus"
+                                    value="Prospectus"/>
+                            <_x0031_771859394357
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Conversation Guide"
+                                    value="Conversation Guide"/>
+                            <_x0031_771859394828
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Client Material"
+                                    value="Client Material"/>
+                            <_x0031_771859395277
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Fact Card"
+                                    value="Fact Card"/>
+                            <_x0031_771859395684
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Folder"
+                                    value="Folder"/>
+                            <_x0031_771859396101
+                                    jcr:primaryType="nt:unstructured"
+                                    text="FlexChoice Material"
+                                    value="FlexChoice Material"/>
+                            <_x0031_771859396501
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Supplement"
+                                    value="Supplement"/>
+                            <_x0031_771859396924
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Slipsheet"
+                                    value="Slipsheet"/>
+                            <_x0031_771859397365
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Producer Material"
+                                    value="Producer Material"/>
+                            <_x0031_771859397771
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product Material"
+                                    value="Product Material"/>
+                            <_x0031_771859398165
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sales Material"
+                                    value="Sales Material"/>
+                        </items>
+                    </contenttype>
+                    <productcategory
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="28"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/productCategory"
+                            singleSelect="{Boolean}true"
+                            text="Product Category"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_771858024962
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Annuities"
+                                    value="Annuities"/>
+                            <_x0031_771858031115
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Life Insurance"
+                                    value="Life Insurance"/>
+                            <_x0031_771858039761
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Educational Resources"
+                                    value="Educational Resources"/>
+                            <_x0031_771858049256
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Group Annuities"
+                                    value="Group Annuities"/>
+                        </items>
+                    </productcategory>
+                    <rmNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                            fieldLabel="Property Predicate"
+                            listOrder="35"
+                            metaType="property"
+                            name="jcr:content/metadata/rmNumber"
+                            text="Rm Number"/>
+                    <legalexpirationdate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/daterangepredicate"
+                            afterLabel="After"
+                            beforeLabel="Before"
+                            displayedFormat="D MMMM YYYY hh:mm a"
+                            fieldLabel="Legal Expiration Date"
+                            listOrder="41"
+                            metaType="daterange"
+                            name="jcr:content/metadata/prism:expirationDate"
+                            quickOptions="lastDay,lastWeek,lastMonth"/>
+                    <duplicateasset
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="23"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/dam:isDuplicate"
+                            singleSelect="{Boolean}false"
+                            text="Duplicate Asset"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_770909461648
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                        </items>
+                    </duplicateasset>
+                </items>
+            </bhfgroup>
             <channels jcr:primaryType="nt:unstructured"/>
             <mainasset
                 jcr:primaryType="nt:unstructured"
@@ -194,380 +560,6 @@
                 metaType="hidden"
                 name="group.1_group.type"
                 value="nt:folder"/>
-            <bhfgroup
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
-                listOrder="35"
-                metaType="bhfgroup"
-                text="BrightHouse Financial group">
-                <items jcr:primaryType="nt:unstructured">
-                    <_x0031_771858160963
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="29"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/productName"
-                        text="Product Name"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_771858207627
-                                jcr:primaryType="nt:unstructured"
-                                text="SmartCare"
-                                value="SmartCare"/>
-                            <_x0031_771858221531
-                                jcr:primaryType="nt:unstructured"
-                                text="SmartGuard Plus"
-                                value="SmartGuard Plus"/>
-                            <_x0031_771858235700
-                                jcr:primaryType="nt:unstructured"
-                                text="One Year Term Life Insurance"
-                                value="One Year Term Life Insurance"/>
-                            <_x0031_771858244779
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level II Annuity"
-                                value="Shield Level II Annuity"/>
-                            <_x0031_771858251212
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level Pay Plus II Annuity"
-                                value="Shield Level Pay Plus II Annuity"/>
-                            <_x0031_771858259738
-                                jcr:primaryType="nt:unstructured"
-                                text="Variable Annuity with FlexChoice Access"
-                                value="Variable Annuity with FlexChoice Access"/>
-                            <_x0031_771858295004
-                                jcr:primaryType="nt:unstructured"
-                                text="SecureKey Fixed Indexed Annuity"
-                                value="SecureKey Fixed Indexed Annuity"/>
-                            <_x0031_771858304060
-                                jcr:primaryType="nt:unstructured"
-                                text="Fixed Rate Annuity"
-                                value="Fixed Rate Annuity"/>
-                            <_x0031_771858351193
-                                jcr:primaryType="nt:unstructured"
-                                text="Fixed Rate Annuity MVA"
-                                value="Fixed Rate Annuity MVA"/>
-                            <_x0031_771858361270
-                                jcr:primaryType="nt:unstructured"
-                                text="Income Annuity"
-                                value="Income Annuity"/>
-                            <_x0031_771858371370
-                                jcr:primaryType="nt:unstructured"
-                                text="Guaranteed Income Builder"
-                                value="Guaranteed Income Builder"/>
-                            <_x0031_771858379310
-                                jcr:primaryType="nt:unstructured"
-                                text="Prime Options with FlexChoice Access"
-                                value="Prime Options with FlexChoice Access"/>
-                        </items>
-                    </_x0031_771858160963>
-                    <_x0031_771859136320
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
-                        fieldLabel="Property Predicate"
-                        listOrder="33"
-                        metaType="property"
-                        name="jcr:content/metadata/legalNumber"
-                        text="Legal Number"/>
-                    <_x0031_771858502384
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="30"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/productVariant"
-                        singleSelect="{Boolean}true"
-                        text="Product Variant"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_771858549298
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level II 3-Year Annuity"
-                                value="Shield Level II 3-Year Annuity"/>
-                            <_x0031_771858560629
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level II 6-Year Annuity"
-                                value="Shield Level II 6-Year Annuity"/>
-                            <_x0031_771858566623
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level II Advisory Annuity"
-                                value="Shield Level II Advisory Annuity"/>
-                            <_x0031_771858574783
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level Pay Plus II Annuity"
-                                value="Shield Level Pay Plus II Annuity"/>
-                            <_x0031_771858587567
-                                jcr:primaryType="nt:unstructured"
-                                text="Shield Level Pay Plus II Advisory"
-                                value="Shield Level Pay Plus II Advisory"/>
-                        </items>
-                    </_x0031_771858502384>
-                    <_x0031_771858615682
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="31"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/firm"
-                        text="Firm"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_771858735219
-                                jcr:primaryType="nt:unstructured"
-                                text="Core"
-                                value="Core"/>
-                            <_x0031_771858746147
-                                jcr:primaryType="nt:unstructured"
-                                text="Merrill Lynch"
-                                value="Merrill Lynch"/>
-                            <_x0031_771858752987
-                                jcr:primaryType="nt:unstructured"
-                                text="Morgan Stanley"
-                                value="Morgan Stanley"/>
-                            <_x0031_771858755650
-                                jcr:primaryType="nt:unstructured"
-                                text="Citigroup"
-                                value="Citigroup"/>
-                            <_x0031_771858771411
-                                jcr:primaryType="nt:unstructured"
-                                text="Primerica"
-                                value="Primerica"/>
-                            <_x0031_771858780492
-                                jcr:primaryType="nt:unstructured"
-                                text="Wells Fargo"
-                                value="Wells Fargo"/>
-                            <_x0031_771858788203
-                                jcr:primaryType="nt:unstructured"
-                                text="JP Morgan Chase"
-                                value="JP Morgan Chase"/>
-                            <_x0031_771858796227
-                                jcr:primaryType="nt:unstructured"
-                                text="Raymond James"
-                                value="Raymond James"/>
-                            <_x0031_771858811467
-                                jcr:primaryType="nt:unstructured"
-                                text="UBS"
-                                value="UBS"/>
-                            <_x0031_771858813749
-                                jcr:primaryType="nt:unstructured"
-                                text="Truist"
-                                value="Truist"/>
-                            <_x0031_771858815789
-                                jcr:primaryType="nt:unstructured"
-                                text="Schwab"
-                                value="Schwab"/>
-                            <_x0031_771858834371
-                                jcr:primaryType="nt:unstructured"
-                                text="MSG/IMO"
-                                value="MSG/IMO"/>
-                            <_x0031_771858839318
-                                jcr:primaryType="nt:unstructured"
-                                text="LPL"
-                                value="LPL"/>
-                        </items>
-                    </_x0031_771858615682>
-                    <_x0031_771859200777
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="34"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/contentType"
-                        singleSelect="{Boolean}true"
-                        text="Content Type"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_771859221411
-                                jcr:primaryType="nt:unstructured"
-                                text="Presentation"
-                                value="Presentation"/>
-                            <_x0031_771859227561
-                                jcr:primaryType="nt:unstructured"
-                                text="Flyer"
-                                value="Flyer"/>
-                            <_x0031_771859227777
-                                jcr:primaryType="nt:unstructured"
-                                text="Sales Idea"
-                                value="Sales Idea"/>
-                            <_x0031_771859227946
-                                jcr:primaryType="nt:unstructured"
-                                text="Brochure"
-                                value="Brochure"/>
-                            <_x0031_771859228090
-                                jcr:primaryType="nt:unstructured"
-                                text="Digital Tool"
-                                value="Digital Tool"/>
-                            <_x0031_771859228251
-                                jcr:primaryType="nt:unstructured"
-                                text="Print Ad"
-                                value="Print Ad"/>
-                            <_x0031_771859228393
-                                jcr:primaryType="nt:unstructured"
-                                text="Digital Ad"
-                                value="Digital Ad"/>
-                            <_x0031_771859228538
-                                jcr:primaryType="nt:unstructured"
-                                text="Rate Flyer"
-                                value="Rate Flyer"/>
-                            <_x0031_771859228682
-                                jcr:primaryType="nt:unstructured"
-                                text="Minimum Rate Flyer"
-                                value="Minimum Rate Flyer"/>
-                            <_x0031_771859228834
-                                jcr:primaryType="nt:unstructured"
-                                text="New Contract Rate Flyer"
-                                value="New Contract Rate Flyer"/>
-                            <_x0031_771859228985
-                                jcr:primaryType="nt:unstructured"
-                                text="Withdrawal Rate Flyer"
-                                value="Withdrawal Rate Flyer"/>
-                            <_x0031_771859229137
-                                jcr:primaryType="nt:unstructured"
-                                text="Social Post"
-                                value="Social Post"/>
-                            <_x0031_771859229298
-                                jcr:primaryType="nt:unstructured"
-                                text="Webpage"
-                                value="Webpage"/>
-                            <_x0031_771859229450
-                                jcr:primaryType="nt:unstructured"
-                                text="Email"
-                                value="Email"/>
-                            <_x0031_771859229609
-                                jcr:primaryType="nt:unstructured"
-                                text="White Paper"
-                                value="White Paper"/>
-                            <_x0031_771859229770
-                                jcr:primaryType="nt:unstructured"
-                                text="Worksheet"
-                                value="Worksheet"/>
-                            <_x0031_771859229954
-                                jcr:primaryType="nt:unstructured"
-                                text="Article"
-                                value="Article"/>
-                            <_x0031_771859230121
-                                jcr:primaryType="nt:unstructured"
-                                text="Video"
-                                value="Video"/>
-                            <_x0031_771859230282
-                                jcr:primaryType="nt:unstructured"
-                                text="Continuing Education"
-                                value="Continuing Education"/>
-                            <_x0031_771859230465
-                                jcr:primaryType="nt:unstructured"
-                                text="Invitation"
-                                value="Invitation"/>
-                            <_x0031_771859230635
-                                jcr:primaryType="nt:unstructured"
-                                text="Mail Merge"
-                                value="Mail Merge"/>
-                            <_x0031_771859393863
-                                jcr:primaryType="nt:unstructured"
-                                text="Prospectus"
-                                value="Prospectus"/>
-                            <_x0031_771859394357
-                                jcr:primaryType="nt:unstructured"
-                                text="Conversation Guide"
-                                value="Conversation Guide"/>
-                            <_x0031_771859394828
-                                jcr:primaryType="nt:unstructured"
-                                text="Client Material"
-                                value="Client Material"/>
-                            <_x0031_771859395277
-                                jcr:primaryType="nt:unstructured"
-                                text="Fact Card"
-                                value="Fact Card"/>
-                            <_x0031_771859395684
-                                jcr:primaryType="nt:unstructured"
-                                text="Folder"
-                                value="Folder"/>
-                            <_x0031_771859396101
-                                jcr:primaryType="nt:unstructured"
-                                text="FlexChoice Material"
-                                value="FlexChoice Material"/>
-                            <_x0031_771859396501
-                                jcr:primaryType="nt:unstructured"
-                                text="Supplement"
-                                value="Supplement"/>
-                            <_x0031_771859396924
-                                jcr:primaryType="nt:unstructured"
-                                text="Slipsheet"
-                                value="Slipsheet"/>
-                            <_x0031_771859397365
-                                jcr:primaryType="nt:unstructured"
-                                text="Producer Material"
-                                value="Producer Material"/>
-                            <_x0031_771859397771
-                                jcr:primaryType="nt:unstructured"
-                                text="Product Material"
-                                value="Product Material"/>
-                            <_x0031_771859398165
-                                jcr:primaryType="nt:unstructured"
-                                text="Sales Material"
-                                value="Sales Material"/>
-                        </items>
-                    </_x0031_771859200777>
-                    <_x0031_771857848241
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="28"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/productCategory"
-                        singleSelect="{Boolean}true"
-                        text="Product Category"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_771858024962
-                                jcr:primaryType="nt:unstructured"
-                                text="Annuities"
-                                value="Annuities"/>
-                            <_x0031_771858031115
-                                jcr:primaryType="nt:unstructured"
-                                text="Life Insurance"
-                                value="Life Insurance"/>
-                            <_x0031_771858039761
-                                jcr:primaryType="nt:unstructured"
-                                text="Educational Resources"
-                                value="Educational Resources"/>
-                            <_x0031_771858049256
-                                jcr:primaryType="nt:unstructured"
-                                text="Group Annuities"
-                                value="Group Annuities"/>
-                        </items>
-                    </_x0031_771857848241>
-                    <_x0031_770909428534
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
-                        listOrder="23"
-                        metaType="listoptions"
-                        name="jcr:content/metadata/dam:isDuplicate"
-                        singleSelect="{Boolean}false"
-                        text="Duplicate Asset"
-                        value="true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <_x0031_770909461648
-                                jcr:primaryType="nt:unstructured"
-                                text="True"
-                                value="true"/>
-                        </items>
-                    </_x0031_770909428534>
-                    <rmNumber
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
-                        fieldLabel="Property Predicate"
-                        listOrder="35"
-                        metaType="property"
-                        name="jcr:content/metadata/rmNumber"
-                        text="Rm Number"/>
-                   <legalexpirationdate
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/daterangepredicate"
-                        afterLabel="After"
-                        beforeLabel="Before"
-                        displayedFormat="D MMMM YYYY hh:mm a"
-                        fieldLabel="Legal Expiration Date"
-                        listOrder="41"
-                        metaType="daterange"
-                        name="jcr:content/metadata/prism:expirationDate"
-                        quickOptions="lastDay,lastWeek,lastMonth"/>
-                </items>
-            </bhfgroup>
             <typeor
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/hidden"
