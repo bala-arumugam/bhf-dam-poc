@@ -3,7 +3,6 @@
     <filter root="/oak:index" mode="update"/>
     <filter root="/apps/bhfdampoc/asset_reports"/>
     <filter root="/apps/bhfdampoc/dam"/>
-    <filter root="/apps/settings"/>
     <filter root="/apps/bhfdampoc/clientlibs"/>
     <filter root="/apps/bhfdampoc/components"/>
     <filter root="/apps/bhfdampoc/i18n"/>
