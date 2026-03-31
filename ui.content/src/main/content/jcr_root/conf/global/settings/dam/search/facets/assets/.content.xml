@@ -7,7 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="Assets Admin Search Rail"
         sling:resourceType="granite/ui/components/foundation/contsys"
-        maxGeneratedOrder="50"
+        maxGeneratedOrder="60"
         predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
         <items jcr:primaryType="nt:unstructured">
             <pathbrowser
