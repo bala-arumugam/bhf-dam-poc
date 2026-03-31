@@ -149,7 +149,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
 
 
     // ---------------------------------------------------------
-// 🔹 Find duplicate assets
+//       Find duplicate assets
 // ---------------------------------------------------------
     private List<Node> findDuplicateAssets(Session session,
                                            String rootPath)
@@ -177,7 +177,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
     }
 
     // ---------------------------------------------------------
-// 🔹 Generate CSV dynamically
+//      Generate CSV dynamically
 // ---------------------------------------------------------
     private File generateCsv(List<ColumnDefinition> columns,
                              List<Node> assets)
@@ -226,7 +226,7 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
     }
 
     // ---------------------------------------------------------
-// 🔹 Resolve property dynamically
+//       Resolve property dynamically
 // ---------------------------------------------------------
     private String resolveDefaultColumn(Node asset, String column) {
 
@@ -328,22 +328,6 @@ public class DuplicateAssetsReportJobConsumer implements JobConsumer {
         }
     }
 
-    public List<String> writeColumnsHeaderToCSV(BufferedWriter writer, List<String> columns) throws IOException {
-        List<String> csvColumns = new ArrayList<String>();
-
-        columns.stream().forEach((c) -> {
-            try {
-                writer.append("\"").append(c.toUpperCase()).append("\"").append(",");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            csvColumns.add(c.toLowerCase());
-        });
-
-        writer.append("\r\n");
-
-        return csvColumns;
-    }
 
     // ---------------------------------------------------------
 //  Save CSV as nt:file under report node
