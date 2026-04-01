@@ -173,7 +173,7 @@
                     sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
                     listOrder="35"
                     metaType="bhfgroup"
-                    text="BrightHouse Financial">
+                    text="Brighthouse Financial">
                 <items jcr:primaryType="nt:unstructured">
                     <productname
                             jcr:primaryType="nt:unstructured"

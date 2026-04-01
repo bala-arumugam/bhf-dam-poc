@@ -1907,7 +1907,7 @@
                 <tab6
                     granite:rel="aem-assets-metadata-form-tab"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="BrightHouse"
+                    jcr:title="Brighthouse"
                     sling:resourceType="granite/ui/components/coral/foundation/container"
                     listOrder="5">
                     <granite:data
