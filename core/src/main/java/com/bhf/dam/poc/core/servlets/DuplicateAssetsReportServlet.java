@@ -1,6 +1,5 @@
 package com.bhf.dam.poc.core.servlets;
 
-import com.day.cq.commons.TidyJSONWriter;
 import com.google.gson.JsonObject;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -95,11 +94,6 @@ public class DuplicateAssetsReportServlet extends SlingAllMethodsServlet {
             jsonResponse.addProperty("message", "Job submitted successfully");
             jsonResponse.addProperty("success", true);
             response.getWriter().write(jsonResponse.toString());
-
-//            TidyJSONWriter writer = new TidyJSONWriter(response.getWriter());
-//            writer.object();
-//            writer.key("jobNodeName").value(jobNodeName);
-//            writer.endObject();
 
             resourceResolver.commit();
 

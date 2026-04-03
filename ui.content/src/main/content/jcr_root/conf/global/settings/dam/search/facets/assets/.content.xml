@@ -7,7 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="Assets Admin Search Rail"
         sling:resourceType="granite/ui/components/foundation/contsys"
-        maxGeneratedOrder="50"
+        maxGeneratedOrder="60"
         predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
         <items jcr:primaryType="nt:unstructured">
             <pathbrowser
@@ -171,9 +171,9 @@
             <bhfgroup
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
-                    listOrder="35"
+                    listOrder="56"
                     metaType="bhfgroup"
-                    text="Brighthouse Financial">
+                    text="Brighthouse">
                 <items jcr:primaryType="nt:unstructured">
                     <productname
                             jcr:primaryType="nt:unstructured"
@@ -497,6 +497,327 @@
                                     value="Group Annuities"/>
                         </items>
                     </productcategory>
+                    <approvallevel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="51"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/approvalLevel"
+                            text="Approval Level"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_774436284843
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Client Approved"
+                                    value="Client Approved"/>
+                            <_x0031_774436405458
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Advisor Only"
+                                    value="Advisor Only"/>
+                            <_x0031_774436533887
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Internal Use Only"
+                                    value="Internal Use Only"/>
+                            <_x0031_774436544838
+                                    jcr:primaryType="nt:unstructured"
+                                    text="IMO Only"
+                                    value="IMO Only"/>
+                            <_x0031_774436551182
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Back Office Use"
+                                    value="Back Office Use"/>
+                        </items>
+                    </approvallevel>
+                    <stateavailability
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="55"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/stateAvailability"
+                            text="State Availability"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_774437207630
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AL"
+                                    value="AL"/>
+                            <_x0031_774437207770
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AK"
+                                    value="AK"/>
+                            <_x0031_774437207897
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AZ"
+                                    value="AZ"/>
+                            <_x0031_774437208041
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AR"
+                                    value="AR"/>
+                            <_x0031_774437208192
+                                    jcr:primaryType="nt:unstructured"
+                                    text="CA"
+                                    value="CA"/>
+                            <_x0031_774437208348
+                                    jcr:primaryType="nt:unstructured"
+                                    text="CO"
+                                    value="CO"/>
+                            <_x0031_774437208483
+                                    jcr:primaryType="nt:unstructured"
+                                    text="CT"
+                                    value="CT"/>
+                            <_x0031_774437208633
+                                    jcr:primaryType="nt:unstructured"
+                                    text="DE"
+                                    value="DE"/>
+                            <_x0031_774437208783
+                                    jcr:primaryType="nt:unstructured"
+                                    text="DC"
+                                    value="DC"/>
+                            <_x0031_774437208933
+                                    jcr:primaryType="nt:unstructured"
+                                    text="FL"
+                                    value="FL"/>
+                            <_x0031_774437209098
+                                    jcr:primaryType="nt:unstructured"
+                                    text="GA"
+                                    value="GA"/>
+                            <_x0031_774437209277
+                                    jcr:primaryType="nt:unstructured"
+                                    text="HI"
+                                    value="HI"/>
+                            <_x0031_774437209449
+                                    jcr:primaryType="nt:unstructured"
+                                    text="ID"
+                                    value="ID"/>
+                            <_x0031_774437209623
+                                    jcr:primaryType="nt:unstructured"
+                                    text="IL"
+                                    value="IL"/>
+                            <_x0031_774437209772
+                                    jcr:primaryType="nt:unstructured"
+                                    text="IN"
+                                    value="IN"/>
+                            <_x0031_774437209930
+                                    jcr:primaryType="nt:unstructured"
+                                    text="IA"
+                                    value="IA"/>
+                            <_x0031_774437210087
+                                    jcr:primaryType="nt:unstructured"
+                                    text="KS"
+                                    value="KS"/>
+                            <_x0031_774437210237
+                                    jcr:primaryType="nt:unstructured"
+                                    text="KY"
+                                    value="KY"/>
+                            <_x0031_774437210386
+                                    jcr:primaryType="nt:unstructured"
+                                    text="LA"
+                                    value="LA"/>
+                            <_x0031_774437210560
+                                    jcr:primaryType="nt:unstructured"
+                                    text="ME"
+                                    value="ME"/>
+                            <_x0031_774437210731
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MD"
+                                    value="MD"/>
+                            <_x0031_774437210881
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MA"
+                                    value="MA"/>
+                            <_x0031_774437211046
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MI"
+                                    value="MI"/>
+                            <_x0031_774437211210
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MN"
+                                    value="MN"/>
+                            <_x0031_774437211384
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MS"
+                                    value="MS"/>
+                            <_x0031_774437211556
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MO"
+                                    value="MO"/>
+                            <_x0031_774437211691
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MT"
+                                    value="MT"/>
+                            <_x0031_774437211841
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NE"
+                                    value="NE"/>
+                            <_x0031_774437211997
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NV"
+                                    value="NV"/>
+                            <_x0031_774437378803
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NH"
+                                    value="NH"/>
+                            <_x0031_774437378942
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NJ"
+                                    value="NJ"/>
+                            <_x0031_774437379092
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NM"
+                                    value="NM"/>
+                            <_x0031_774437379242
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NY"
+                                    value="NY"/>
+                            <_x0031_774437379400
+                                    jcr:primaryType="nt:unstructured"
+                                    text="NC"
+                                    value="NC"/>
+                            <_x0031_774437379542
+                                    jcr:primaryType="nt:unstructured"
+                                    text="ND"
+                                    value="ND"/>
+                            <_x0031_774437379685
+                                    jcr:primaryType="nt:unstructured"
+                                    text="OH"
+                                    value="OH"/>
+                            <_x0031_774437379819
+                                    jcr:primaryType="nt:unstructured"
+                                    text="OK"
+                                    value="OK"/>
+                            <_x0031_774437379954
+                                    jcr:primaryType="nt:unstructured"
+                                    text="OR"
+                                    value="OR"/>
+                            <_x0031_774437380096
+                                    jcr:primaryType="nt:unstructured"
+                                    text="PA"
+                                    value="PA"/>
+                            <_x0031_774437380225
+                                    jcr:primaryType="nt:unstructured"
+                                    text="RI"
+                                    value="RI"/>
+                            <_x0031_774437380382
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SC"
+                                    value="SC"/>
+                            <_x0031_774437380524
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SD"
+                                    value="SD"/>
+                            <_x0031_774437380675
+                                    jcr:primaryType="nt:unstructured"
+                                    text="TN"
+                                    value="TN"/>
+                            <_x0031_774437380840
+                                    jcr:primaryType="nt:unstructured"
+                                    text="TX"
+                                    value="TX"/>
+                            <_x0031_774437381003
+                                    jcr:primaryType="nt:unstructured"
+                                    text="UT"
+                                    value="UT"/>
+                            <_x0031_774437381168
+                                    jcr:primaryType="nt:unstructured"
+                                    text="VT"
+                                    value="VT"/>
+                            <_x0031_774437381341
+                                    jcr:primaryType="nt:unstructured"
+                                    text="VA"
+                                    value="VA"/>
+                            <_x0031_774437381529
+                                    jcr:primaryType="nt:unstructured"
+                                    text="WA"
+                                    value="WA"/>
+                            <_x0031_774437381692
+                                    jcr:primaryType="nt:unstructured"
+                                    text="WV"
+                                    value="WV"/>
+                            <_x0031_774437381836
+                                    jcr:primaryType="nt:unstructured"
+                                    text="WI"
+                                    value="WI"/>
+                            <_x0031_774437381994
+                                    jcr:primaryType="nt:unstructured"
+                                    text="WY"
+                                    value="WY"/>
+                        </items>
+                    </stateavailability>
+                    <assetstatus
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="53"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/assetStatus"
+                            singleSelect="{Boolean}true"
+                            text="Asset Status"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_774436757651
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Approved"
+                                    value="Approved"/>
+                            <_x0031_774436758281
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Expired"
+                                    value="Expired"/>
+                        </items>
+                    </assetstatus>
+                    <channel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                            listOrder="52"
+                            metaType="listoptions"
+                            name="jcr:content/metadata/channel"
+                            text="Channel"
+                            value="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <_x0031_774436609689
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Web"
+                                    value="Web"/>
+                            <_x0031_774436624837
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Email"
+                                    value="Email"/>
+                            <_x0031_774436625044
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Print"
+                                    value="Print"/>
+                            <_x0031_774436625208
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Print on Demand"
+                                    value="Print on Demand"/>
+                            <_x0031_774436625358
+                                    jcr:primaryType="nt:unstructured"
+                                    text="View Only"
+                                    value="View Only"/>
+                            <_x0031_774436625522
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Direct Mail"
+                                    value="Direct Mail"/>
+                            <_x0031_774436625703
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sales Kit"
+                                    value="Sales Kit"/>
+                            <_x0031_774436625881
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Custom Kit"
+                                    value="Custom Kit"/>
+                            <_x0031_774436663120
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Social"
+                                    value="Social"/>
+                            <_x0031_774436663256
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Print Ad"
+                                    value="Print Ad"/>
+                            <_x0031_774436663412
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Digital Ad"
+                                    value="Digital Ad"/>
+                        </items>
+                    </channel>
                     <rmNumber
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
@@ -504,7 +825,7 @@
                             listOrder="35"
                             metaType="property"
                             name="jcr:content/metadata/rmNumber"
-                            text="Rm Number"/>
+                            text="RM Number"/>
                     <legalexpirationdate
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/daterangepredicate"

@@ -7,7 +7,7 @@
     <items jcr:primaryType="nt:unstructured">
         <bhfgroup
                 jcr:primaryType="nt:unstructured"
-                fieldLabel="BrightHouse Financial"
+                fieldLabel="BrightHouse"
                 fieldPropResourceType="dam/gui/coral/components/admin/customsearch/formbuilder/predicatefields/statusgrouppredicatefield"
                 fieldResourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/grouppredicate"
                 fieldTitle="BHF Predicate"
